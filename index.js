@@ -5,7 +5,7 @@ const numbers = [10, 13, 20, 25, 38, 35, 40];
 /*****************************************************************
 Part 1: Filtering
 
-Write code to perform the following tasks using the filter method:
+Write code to perform the following tasks using thee filter method:
 Q1) Create a new array containing numbers that are greater than or equal to 25.
 Q2) Create a new array containing numbers that are divisible by 5.
 ******************************************************************/
