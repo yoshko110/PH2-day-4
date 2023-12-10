@@ -9,7 +9,10 @@ Write code to perform the following tasks using thee filter method:
 Q1) Create a new array containing numbers that are greater than or equal to 25.
 Q2) Create a new array containing numbers that are divisible by 5.
 ******************************************************************/
-
+function filterIt(x) {
+  return x % 5 == 0;
+}
+console.log(numbers.filter(filterIt));
 /*****************************************************************
 Part 2: Mapping
 
@@ -18,7 +21,10 @@ Write code to perform the following tasks using the map method:
 Q3) Create a new array that contains each number squared.
 Q4) Create a new array that contains each number multiplied by 2.
 ******************************************************************/
-
+function mapIt(x) {
+  return x * 2;
+}
+console.log(numbers.map(mapIt));
 /*****************************************************************
 Part 3: Combining Filtering and Mapping
 
@@ -27,3 +33,12 @@ Combine the filter and map methods to perform the following tasks:
 Q5) Filter the numbers that are greater than or equal to 20 and then square each of them.
 Q6) Filter the numbers that are divisible by 5 and then multiply each of them by 3.
 ******************************************************************/
+function filterIt2(x) {
+  return x >= 20;
+}
+
+function mapIt2(x) {
+  return x ** 2;
+}
+
+console.log(numbers.filter(filterIt2).map(mapIt2));
