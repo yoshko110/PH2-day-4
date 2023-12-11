@@ -12,7 +12,11 @@ Q2) Create a new array containing numbers that are divisible by 5.
 function filterIt(x) {
   return x % 5 == 0;
 }
-console.log(numbers.filter(filterIt));
+function filterDiv(x) {
+  return x % 2 === 0;
+}
+console.log(numbers.filter(filterIt)); //numbers.filter(filterDiv))
+console.log(numbers.filter(filterDiv));
 /*****************************************************************
 Part 2: Mapping
 
@@ -24,7 +28,11 @@ Q4) Create a new array that contains each number multiplied by 2.
 function mapIt(x) {
   return x * 2;
 }
-console.log(numbers.map(mapIt));
+function mapMult(y) {
+  return y * y;
+}
+console.log(numbers.map(mapIt)); //.map(mapMult));
+console.log(numbers.map(mapMult));
 /*****************************************************************
 Part 3: Combining Filtering and Mapping
 
@@ -37,8 +45,15 @@ function filterIt2(x) {
   return x >= 20;
 }
 
-function mapIt2(x) {
-  return x ** 2;
+function mapIt2(z) {
+  return z ** 2;
+}
+function filterIt3(y) {
+  return y % 5 === 0;
+}
+function mapIt3(n) {
+  return n ** 3;
 }
 
 console.log(numbers.filter(filterIt2).map(mapIt2));
+console.log(numbers.filter(filterIt3).map(mapIt3));
